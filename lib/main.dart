@@ -24,29 +24,39 @@ class FacebookApp extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "facebook",
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.blueAccent, fontSize: 28,fontWeight: FontWeight.bold),
         ),
 // ==========================================================================
 
           centerTitle: true,
           leading: IconButton( 
-            icon: Icon( Icons.menu ),
+            icon: Icon( Icons.menu , color: Colors.blueAccent, size: 28,),
              onPressed: () {  },
           ),
 // ==========================================================================
           actions: [
             IconButton(
-              icon: Icon( Icons.message ), 
+              icon: Icon( Icons.message , color: Colors.blueAccent, size: 28,), 
               onPressed: () {  },
             ),
 //==========================================================================            
             IconButton(
-              icon: Icon( Icons.search ),
-               onPressed: () {  },
+              icon: Icon( Icons.search , color: Colors.blueAccent, size:28,),
+               onPressed: () {  },           
             ),
 //==========================================================================            
           ],
+          backgroundColor: Colors.white,
+//==========================================================================
+          elevation: 20,
+//==========================================================================
       ),
+
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {},
+            child: Icon(Icons.add),
+          ),
+
     );
   }
 }
